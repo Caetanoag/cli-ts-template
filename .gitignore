@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tgz
+*.tsbuildinfo
+
+# Test output
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.idea/
+.DS_Store
