@@ -1,0 +1,60 @@
+{
+	"name": "cli-ts-template",
+	"version": "0.1.0",
+	"description": "A batteries-included TypeScript CLI starter for npm",
+	"keywords": [
+		"cli",
+		"typescript",
+		"template",
+		"starter",
+		"npm"
+	],
+	"license": "MIT",
+	"author": "Your Name",
+	"private": true,
+	"type": "module",
+	"main": "dist/main.js",
+	"bin": {
+		"cli-ts-template": "dist/main.js"
+	},
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=22.18.0"
+	},
+	"scripts": {
+		"dev": "tsx src/main.ts",
+		"build": "tsup",
+		"start": "node dist/main.js",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"lint": "biome check .",
+		"format": "biome check --write .",
+		"check": "npm run lint && npm run typecheck && npm run test",
+		"prepublishOnly": "npm run check && npm run build",
+		"changeset": "changeset",
+		"version-packages": "changeset version",
+		"release": "changeset publish"
+	},
+	"dependencies": {
+		"@clack/prompts": "^1.8.1",
+		"commander": "^15.0.0",
+		"conf": "^16.0.0",
+		"picocolors": "^1.1.1",
+		"zod": "^4.6.7"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.6.2",
+		"@changesets/cli": "^3.0.3",
+		"@types/node": "^22.0.0",
+		"tsup": "^9.0.0",
+		"tsx": "^4.23.15",
+		"typescript": "^7.0.2",
+		"vitest": "^5.0.5"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
