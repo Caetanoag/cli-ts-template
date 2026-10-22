@@ -1,11 +1,6 @@
 # cli-ts-template
 
-A small, batteries-included TypeScript CLI starter for packages published on npm.
-
-It is intentionally boring where it should be boring: ESM, strict TypeScript, a
-predictable command structure, typed configuration, tests, linting, CI, release
-automation and a publishing checklist. Replace the sample commands with your
-idea and ship.
+A small, but read-to-use TypeScript CLI starter for packages published on npm.
 
 > This package is marked `"private": true` so it cannot be published by accident.
 > See [Renaming the template](#renaming-the-template).
